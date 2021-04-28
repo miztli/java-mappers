@@ -2,15 +2,17 @@ package com.example.mappers.model;
 
 public class User {
     private String name;
+    private String email;
     private int age;
     private Car car;
 
-    public static User from(String name, int age, Car car) {
-        return new User(name, age, car);
+    public static User from(String name, String email,  int age, Car car) {
+        return new User(name, email, age, car);
     }
 
-    private User(String name, int age, Car car) {
+    private User(String name, String email, int age, Car car) {
         this.name = name;
+        this.email = email;
         this.age = age;
         this.car = car;
     }
@@ -37,5 +39,15 @@ public class User {
 
     public void setCar(Car car) {
         this.car = car;
+    }
+
+    public void setEmail(final String email)
+    {
+        this.email = email;
+    }
+
+    public String getEmail()
+    {
+        return email;
     }
 }
