@@ -1,4 +1,4 @@
-package com.example.mappers;
+/*package com.example.mappers;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,4 +10,4 @@ class MappersApplicationTests {
 	void contextLoads() {
 	}
 
-}
+}*/
